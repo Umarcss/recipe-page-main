@@ -215,7 +215,7 @@ The page is built with a mobile-first approach, ensuring optimal viewing experie
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/recipe-page-main.git
+   git clone https://github.com/Umarcss/recipe-page-main.git
    ```
 
 2. **Navigate to the project directory**
@@ -243,7 +243,7 @@ The page is built with a mobile-first approach, ensuring optimal viewing experie
 1. Push your code to a GitHub repository
 2. Go to repository Settings > Pages
 3. Select source branch (usually `main`)
-4. Your site will be available at `https://yourusername.github.io/repository-name`
+4. Your site will be available at `https://Umarcss.github.io/repository-name`
 
 ### Netlify
 1. Connect your GitHub repository to Netlify
@@ -277,6 +277,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by [Your Name](https://github.com/yourusername)**
+**Built with ❤️ by [Umar Abubakar](https://github.com/Umarcss)**
 
 *This project is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).*
