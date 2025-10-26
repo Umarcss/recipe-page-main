@@ -1,89 +1,282 @@
-# Frontend Mentor - Recipe page
+# 🍳 Simple Omelette Recipe Page
 
-![Design preview for the Recipe page coding challenge](./preview.jpg)
+A beautiful, responsive recipe page showcasing a classic omelette recipe. Built with modern web technologies and designed with a mobile-first approach for optimal viewing across all devices.
 
-## Welcome! 👋
+![Recipe Page Preview](./preview.jpg)
 
-Thanks for checking out this front-end coding challenge.
+## 📋 Table of Contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Overview](#overview)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+  - [Live Demo](#live-demo)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Design System](#design-system)
+- [Development Process](#development-process)
+- [Key Features](#key-features)
+- [Responsive Design](#responsive-design)
+- [Performance Optimizations](#performance-optimizations)
+- [Browser Support](#browser-support)
+- [Getting Started](#getting-started)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## 🎯 Overview
 
-## The challenge
+This project is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). It features a clean, modern design that showcases a simple omelette recipe with detailed ingredients, step-by-step instructions, preparation time, and nutritional information.
 
-Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+### ✨ Features
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- **📱 Mobile-First Responsive Design** - Optimized for all screen sizes
+- **🎨 Modern Typography** - Custom fonts (Young Serif & Outfit) for enhanced readability
+- **📊 Nutritional Information** - Detailed nutrition table with calories, carbs, protein, and fat
+- **⏱️ Preparation Time** - Clear breakdown of total, preparation, and cooking time
+- **📝 Step-by-Step Instructions** - Numbered instructions for easy following
+- **🎯 Semantic HTML** - Properly structured content for accessibility
+- **🎨 Custom Color Palette** - Carefully selected colors for optimal visual hierarchy
+- **📐 CSS Grid & Flexbox** - Modern layout techniques for responsive design
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### 📸 Screenshots
 
-## Where to find everything
+#### Desktop View
+![Desktop Design](./design/desktop-design.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+#### Mobile View
+![Mobile Design](./design/mobile-design.jpg)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### 🔗 Live Demo
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- **Live Site**: [View Live Demo](https://your-live-site-url.com)
+- **Frontend Mentor Solution**: [View Solution](https://www.frontendmentor.io/solutions/your-solution-url)
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+## 🛠️ Tech Stack
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+- **HTML5** - Semantic markup structure
+- **CSS3** - Modern styling with custom properties
+- **Responsive Design** - Mobile-first approach
+- **Custom Fonts** - Young Serif & Outfit from Google Fonts
+- **CSS Grid & Flexbox** - Modern layout techniques
+- **Media Queries** - Responsive breakpoints
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## 📁 Project Structure
 
-## Building your project
+```
+recipe-page-main/
+├── assets/
+│   ├── css/
+│   │   └── style.css          # Main stylesheet
+│   ├── fonts/
+│   │   ├── outfit/           # Outfit font family
+│   │   └── young-serif/      # Young Serif font
+│   └── images/
+│       ├── favicon-32x32.png
+│       └── image-omelette.jpeg
+├── design/
+│   ├── desktop-design.jpg
+│   └── mobile-design.jpg
+├── index.html                # Main HTML file
+├── style-guide.md           # Design system documentation
+└── README.md               # Project documentation
+```
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## 🎨 Design System
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### Color Palette
 
-## Deploying your project
+- **White**: `hsl(0, 0%, 100%)` - Main background
+- **Stone 100**: `hsl(30, 54%, 90%)` - Desktop background
+- **Stone 600**: `hsl(30, 10%, 34%)` - Body text
+- **Stone 900**: `hsl(24, 5%, 18%)` - Main headings
+- **Brown 800**: `hsl(14, 45%, 36%)` - Section headings
+- **Rose 800**: `hsl(332, 51%, 32%)` - Preparation time heading
+- **Rose 50**: `hsl(330, 100%, 98%)` - Preparation time background
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Typography
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- **Headings**: Young Serif (400 weight)
+- **Body Text**: Outfit (400, 600, 700 weights)
+- **Font Sizes**: Responsive scaling from 14px to 2.5rem
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Layout Breakpoints
 
-## Create a custom `README.md`
+- **Mobile**: 375px and below
+- **Tablet**: 376px - 768px
+- **Desktop**: 769px and above
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+## 🚀 Development Process
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### 1. Planning & Analysis
+- Analyzed the design requirements and created a component breakdown
+- Identified key responsive breakpoints and layout considerations
+- Planned the semantic HTML structure
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### 2. HTML Structure
+- Created semantic HTML5 markup with proper heading hierarchy
+- Implemented accessible form elements and navigation
+- Added proper alt text and ARIA labels
 
-## Submitting your solution
+### 3. CSS Implementation
+- Implemented mobile-first responsive design
+- Created reusable CSS custom properties for colors and spacing
+- Used modern CSS techniques (Grid, Flexbox, custom properties)
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+### 4. Responsive Design
+- Tested across multiple device sizes
+- Optimized typography and spacing for different screen sizes
+- Ensured touch-friendly interface elements
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+## 🔧 Key Features
 
-## Sharing your solution
+### Responsive Layout
+```css
+/* Mobile-first approach */
+.main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-There are multiple places you can share your solution:
+/* Desktop styles */
+@media (min-width: 769px) {
+    .main {
+        width: 50%;
+        margin: 50px auto;
+        border-radius: 1.2rem;
+        padding: 50px;
+    }
+}
+```
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### Custom Typography
+```css
+h1, h2 {
+    font-family: "Young Serif";
+    color: hsl(24, 5%, 18%);
+}
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+p, li, span {
+    font-family: "Outfit";
+    color: hsl(30, 10%, 34%);
+}
+```
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+### Nutrition Table
+```css
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-## Got feedback for us?
+.nutrition-table tr {
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+```
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+## 📱 Responsive Design
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+The page is built with a mobile-first approach, ensuring optimal viewing experience across all devices:
 
-**Have fun building!** 🚀
+- **Mobile (≤375px)**: Full-width layout with minimal padding
+- **Tablet (376px-768px)**: Centered layout with moderate padding
+- **Desktop (≥769px)**: Centered card layout with maximum padding
+
+### Key Responsive Features:
+- Fluid typography scaling
+- Adaptive image sizing
+- Flexible spacing and padding
+- Touch-friendly interface elements
+
+## ⚡ Performance Optimizations
+
+- **Optimized Images**: Compressed and properly sized images
+- **Font Loading**: Efficient Google Fonts loading with preconnect
+- **CSS Optimization**: Minimal and efficient CSS
+- **Semantic HTML**: Clean, accessible markup structure
+
+## 🌐 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 🚀 Getting Started
+
+### Prerequisites
+- A modern web browser
+- A text editor (VS Code, Sublime Text, etc.)
+- Basic knowledge of HTML and CSS
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/recipe-page-main.git
+   ```
+
+2. **Navigate to the project directory**
+   ```bash
+   cd recipe-page-main
+   ```
+
+3. **Open the project**
+   - Open `index.html` in your web browser
+   - Or use a local development server:
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve .
+   ```
+
+4. **View the project**
+   - Open `http://localhost:8000` in your browser
+
+## 🚀 Deployment
+
+### GitHub Pages
+1. Push your code to a GitHub repository
+2. Go to repository Settings > Pages
+3. Select source branch (usually `main`)
+4. Your site will be available at `https://yourusername.github.io/repository-name`
+
+### Netlify
+1. Connect your GitHub repository to Netlify
+2. Deploy automatically on every push
+3. Get a custom domain and SSL certificate
+
+### Vercel
+1. Import your GitHub repository to Vercel
+2. Deploy with zero configuration
+3. Get automatic deployments and previews
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Frontend Mentor** - For providing the design challenge
+- **Google Fonts** - For the beautiful Young Serif and Outfit fonts
+- **Design Inspiration** - Based on the Frontend Mentor recipe page challenge
+
+---
+
+**Built with ❤️ by [Your Name](https://github.com/yourusername)**
+
+*This project is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).*
